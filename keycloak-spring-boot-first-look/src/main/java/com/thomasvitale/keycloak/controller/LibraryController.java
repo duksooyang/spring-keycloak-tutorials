@@ -47,6 +47,9 @@ public class LibraryController {
 
 	private void configCommonAttributes(Model model) {
 		model.addAttribute("name", getKeycloakSecurityContext().getIdToken().getGivenName());
+		//model.addAttribute("name", getKeycloakSecurityContext().
+
+
 	}
 
 	private KeycloakSecurityContext getKeycloakSecurityContext() {
