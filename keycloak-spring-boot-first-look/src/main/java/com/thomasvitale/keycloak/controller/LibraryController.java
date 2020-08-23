@@ -74,16 +74,21 @@ public class LibraryController {
 
 
 		if(otherClaims.containsKey("fullname")){
-
 			model.addAttribute("attribute1", String.valueOf(otherClaims.get("fullname")));
+		}else{
+			model.addAttribute("attribute1", "미등록");
 		}
 
 		if(otherClaims.containsKey("place")){
 			model.addAttribute("attribute2", String.valueOf(otherClaims.get("place")));
+		}else{
+			model.addAttribute("attribute2", "미등록");
 		}
 
 		if(otherClaims.containsKey("sex")){
 			model.addAttribute("attribute3", String.valueOf(otherClaims.get("sex")));
+		}else{
+			model.addAttribute("attribute3", "미등록");
 		}
 
 
