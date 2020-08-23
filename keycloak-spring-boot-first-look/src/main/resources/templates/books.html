@@ -28,6 +28,9 @@
             <li class="nav-item">
                 <a class="nav-link" href="/manager">Manage Library</a>
             </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/userattr">User Attribute</a>
+            </li>
         </ul>
         <ul class="navbar-nav ml-auto">
             <li class="nav-item">
@@ -40,9 +43,16 @@
 <main role="main" class="container">
 
     <div class="starter-template">
-        <h1>Hello <span th:text="${name}"></span></h1>
-        <p class="lead">This page is protected. You have member privileges, so you can browse the books.</p>
+        <h1>등록 이름 :  <span th:text="${name}"></span></h1>
+        <p class="lead">이 페이지는 멤버 권한 이상 볼 수 있습니다.</p>
+        <br><p class="lead">키클록 유저 등록 정보 보기.</p>
     </div>
+
+
+    <br>
+    <br>
+
+
 
     <table class="table">
         <thead>
